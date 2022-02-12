@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Lucy Provenzano">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Lucy Provenzano · Portfolio </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Place your stylesheet here-->
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="lightbox.js"></script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Lucy Provenzano</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#"> About <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Works</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="assets/images/drawing/abstract%201.png">
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/images/drawing/abstract%202.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/images/drawing/abstract%203.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/images/drawing/abstract%20line%20drawing.jpg">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        </div>
+    </div>
+
+    <main role="main" class="container">
+        <!-- logo goes here  -->
+        <div class="text-center mt-5 pt-5">
+            <h1>Title</h1>
+        </div>
+        <!-- or maybe logo goes here  -->
+
+        <div class="row padded-row">
+            <div class="col">
+                <img class="img-responsive works-image hover-shadow" src="assets/images/drawing/abstract%201.png" onclick="openModal();currentSlide(1)"/>
+
+            </div>
+            <div class="col">
+                <img class="img-responsive works-image hover-shadow" src="assets/images/drawing/abstract%202.jpg" onclick="openModal();currentSlide(2)" />
+            </div>
+            <div class="col">
+                <img class="img-responsive works-image hover-shadow" src="assets/images/drawing/abstract%203.jpg" onclick="openModal();currentSlide(3)" />
+            </div>
+            <div class="col">
+                <img class="img-responsive works-image hover-shadow" src="assets/images/drawing/abstract%20line%20drawing.jpg" onclick="openModal();currentSlide(4)" />
+                
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+<footer class="container">
+       
+        <div class="row">
+            <div class="col-sm-4"> <a href="https://www.instagram.com/lucyprovenzano.art/?hl=en" target="_blank" class="footerLink"> <i class="fab fa-instagram fa-2x"></i>lucyprovenzano.art </a></div>
+            <div class="col-sm-4"> <a href="https://www.youtube.com/channel/UCdeJe9Q6EzH6tPQinmhr2OA/videos" target="_blank" class="footerLink"> <i class="fab fa-youtube fa-2x"></i> lucy provenzano</a></div>
+             <div class="col-sm-4 footerLink">  <i class="fas fa-envelope fa-2x"></i> l.provenzano17 [at] gmail dot com </div>
+        </div>
+       <br>
+       <br>
+       <div class="row">
+            <p class="col-sm-12 text-center list-inline">&copy; 2022 Lucy Provenzano</p> 
+        </div>
+       <br>
+       <br>
+       <br>
+    </footer>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body></html>

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image-thumbnail-container {
+    cursor: pointer;
+    height: 15vw;
+
+}
+
+.image-thumbnail-container:hover .thumbnail-image {
+    opacity: 0.7;
+}
+
+.thumbnail-image {
+    opacity: 1;
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.thumbnail-overlay {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.works-title {
+    background-color: #424040;
+    color: white;
+    font-size: 20px;
+    padding: 14px 25px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.works-title:hover {
+    background-color: black;
+}
+
+.padded-row {
+    margin-bottom: 30px;
+}
+
+.works-image {
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: auto;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mySlides ul{
+    color: #fff;
+    list-style: none;
+}
+
+.lightboxImageTitle{
+    font-size: 1.7em;
+}
+
+.mySlides img, .mySlides iframe{
+    display: block;
+
+    height: 80vh;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 5vh;
+    height: 5vh;
+    padding: 0px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease;
+    border-radius: 999px;
+    user-select: none;
+    background-color: #ffffff;
+    -webkit-user-select: none;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.HomeNav{
+    position: fixed;
+    border-radius: 999px;
+    bottom: 50px;
+    right: 50px;
+    background-color: rgba(0,0,0,0.8);
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.3s;
+    z-index: 9999;
+}
+
+.HomeNav p{
+    margin: 0;
+}
+
+.HomeNav p a{
+    color: white;
+    text-decoration: none;
+}
+
+.HomeNav:hover{
+    background-color: #000000;
+    cursor:pointer;
+}
+
+a i {
+    color: rgba(0,0,0,0.8);
+    transition: ease 0.3s;
+    
+}
+
+a i:hover {
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+.footerLink{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.footerLink:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+.footerLink i{
+    margin-right: 10px;
+}
+
