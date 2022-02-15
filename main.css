@@ -39,7 +39,6 @@ body {
     font-size: 20px;
     padding: 14px 25px;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .works-title:hover {
@@ -104,16 +103,17 @@ body {
     align-content: center;
 }
 
-.mySlides ul{
+.mySlides ul {
     color: #fff;
     list-style: none;
 }
 
-.lightboxImageTitle{
+.lightboxImageTitle {
     font-size: 1.7em;
 }
 
-.mySlides img, .mySlides iframe{
+.mySlides img,
+.mySlides iframe {
     display: block;
 
     height: 80vh;
@@ -184,12 +184,12 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.HomeNav{
+.HomeNav {
     position: fixed;
     border-radius: 999px;
     bottom: 50px;
     right: 50px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
     height: 60px;
     width: 60px;
@@ -201,33 +201,33 @@ img.hover-shadow {
     z-index: 9999;
 }
 
-.HomeNav p{
+.HomeNav p {
     margin: 0;
 }
 
-.HomeNav p a{
+.HomeNav p a {
     color: white;
     text-decoration: none;
 }
 
-.HomeNav:hover{
+.HomeNav:hover {
     background-color: #000000;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 a i {
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
     transition: ease 0.3s;
-    
+
 }
 
 a i:hover {
     color: #000000;
     cursor: pointer;
-    
+
 }
 
-.footerLink{
+.footerLink {
     display: flex;
     align-items: center;
     align-content: center;
@@ -235,12 +235,87 @@ a i:hover {
     color: #000000;
 }
 
-.footerLink:hover{
+.footerLink:hover {
     text-decoration: none;
     color: #000000;
 }
 
-.footerLink i{
+.footerLink i {
     margin-right: 10px;
 }
 
+@media only screen and (max-width: 999px) {
+    .mySlides {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .mySlides ul {
+        color: #fff;
+        list-style: none;
+        display: inline;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .lightboxImageTitle {
+        font-size: 1.7em;
+    }
+
+    .mySlides img,
+    .mySlides iframe {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .image-thumbnail-container {
+        height: 30vw;
+
+    }
+
+    .thumbnail-image {
+        height: 30vw;
+    }
+
+    .image-thumbnail-col:nth-child(odd) {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    .mySlides img,
+    .mySlides iframe {
+        height: 40vh;
+    }
+    
+}
+
+@media only screen and (max-width: 415px) {
+
+    .mySlides img,
+    .mySlides iframe {
+        height: 30vh;
+        max-width: 90vw;
+    }
+    
+    .mySlides ul {
+        max-width: 70vw;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .works-title {
+        font-size: 16px;
+    }
+
+    .mySlides img,
+    .mySlides iframe {
+        height: 25vh;
+    }
+
+}
